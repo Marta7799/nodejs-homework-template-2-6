@@ -1,5 +1,5 @@
 const service = require("../service/contacts");
-const { contactValidator } = require("./../utils/validator");
+const { contactValidator } = require("./../utils/validators/validator");
 
 const getAll = async (req, res, next) => {
   const { _id: owner } = req.user;
