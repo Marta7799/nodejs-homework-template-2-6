@@ -3,10 +3,8 @@ const mongoose = require("mongoose");
 const {
   createFolderIfNotExist,
   uploadDir,
-  imgeStore,
   imageStore,
 } = require("./middlewares/upload");
-const { strict } = require("assert");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
