@@ -52,7 +52,7 @@ const joiLoginSchema = Joi.object({
 });
 
 const verifyEmailSchema = Joi.object({
-  email: Joi.string().required(),
+  email: Joi.string().email().required(),
 });
 
 const User = model("user", userSchema);

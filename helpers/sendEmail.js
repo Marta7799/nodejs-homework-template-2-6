@@ -12,6 +12,7 @@ const sendEmail = async (data) => {
     await sgMail.send(email);
     return true;
   } catch (error) {
+    console.log(error);
     throw new Error();
   }
 };
